@@ -73,6 +73,8 @@ void clear_graphics_screen(Xuint32 BaseAddress);
 void clear_text_screen(Xuint32 BaseAddress);
 
 void draw_square(Xuint32 BaseAddress);
+void print_char(Xuint32 BaseAddress, unsigned char char_c);
 void print_string(Xuint32 BaseAddress, unsigned char string_s[], int lenght);
+
 
 #endif /** VGA_PERIPH_MEM_H */

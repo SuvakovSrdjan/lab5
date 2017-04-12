@@ -47,7 +47,11 @@ void print(char *str);
 int main()
 {
     init_platform();
-    unsigned char string_s[] = "LPRS 2\n";
+    unsigned char string_s[] = "LPRSO SAM AAA\n";
+    unsigned char c = 'A';
+    int i =0;
+    int direction = 0;
+    int ticker = 0;
 
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x00, 0x0);// direct mode   0
     VGA_PERIPH_MEM_mWriteMemory(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + 0x04, 0x3);// display_mode  1
@@ -61,9 +65,31 @@ int main()
 
     clear_text_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
-    draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
-    set_cursor(350);
-    print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, 6);
+    //draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+    //set_cursor(350);
+    //print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, strlen(string_s)-1);
+    //set_cursor(550);
+    //print_char(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, c);
+    //clear_text_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+    //clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
+
+    for(i = 0; i < 640; i++) {
+        	if(direction == 0) {
+    			draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + i);
+
+    			if(i == 639) {
+    				direction = 1;
+    				i = 0;
+    			}
+        	}else{
+        		draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR +640 - i);
+
+        		if(640 -i == 1) {
+        		    				direction = 0;
+        		    				i = 0;
+        		    			}
+        	}
+        	}
 
 
     return 0;

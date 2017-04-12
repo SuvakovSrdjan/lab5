@@ -5,18 +5,21 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../src/helloworld.c \
-../src/platform.c 
+../src/platform.c \
+../src/vga_periph_mem.c 
 
 LD_SRCS += \
 ../src/lscript.ld 
 
 OBJS += \
 ./src/helloworld.o \
-./src/platform.o 
+./src/platform.o \
+./src/vga_periph_mem.o 
 
 C_DEPS += \
 ./src/helloworld.d \
-./src/platform.d 
+./src/platform.d \
+./src/vga_periph_mem.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

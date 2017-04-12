@@ -137,3 +137,108 @@
 09:39:04.953 INFO  - Refreshed build settings on project hello_world 
 10:33:44.745 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 10:36:10.473 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+10:58:48.760 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+10:58:53.830 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+10:59:31.707 INFO  - Copied contents of C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.bit into \basic_system_hw_platform\system.bit. 
+10:59:31.707 INFO  - Copied contents of C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system_bd.bmm into \basic_system_hw_platform\system_bd.bmm. 
+11:08:11.289 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:29:47.392 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+11:29:47.485 ERROR - Unable to read in MSS file C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+11:30:06.819 ERROR - Unable to read in MSS file C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+11:30:06.835 ERROR - Unable to read in MSS file C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+11:30:06.866 WARN  - Unable to determine location of documentation for OS . 
+11:30:06.882 ERROR - Unable to read in MSS file C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+11:30:06.882 ERROR - Unable to read in MSS file C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Workspace\hello_world_bsp\system.mss. 
+11:30:19.455 INFO  - Settings changed on project hello_world_bsp. Triggering a rebuild... 
+11:41:32.679 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:42:09.156 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:42:16.271 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:42:41.502 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:42:47.946 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:43:28.578 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:43:36.333 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:43:38.050 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Cannot perform the Debug Command
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:43:38.050 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Target with ID 0 in the System
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.setResetOnRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:44:53.989 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:45:19.002 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:46:26.205 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:46:31.495 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+11:46:31.495 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+11:46:37.986 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+11:46:56.276 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:49:53.622 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+11:50:32.082 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:50:42.551 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+11:50:59.727 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+11:52:14.804 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:52:26.287 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+11:52:45.134 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:01:08.827 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:03:20.554 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+12:03:24.128 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+12:03:24.129 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
+12:03:31.508 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+12:03:47.968 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:10:49.211 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:00.415 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:12:09.689 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+12:12:09.689 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:12:25.587 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+12:12:49.806 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:13:32.696 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:13:34.242 ERROR - Unexpected error while launching program. java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.TM.terminateCurrentLaunch(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runApplication(Unknown Source)
+
+12:14:26.323 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:14:48.381 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:15:04.424 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+12:15:08.963 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+12:15:10.118 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:15:29.485 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+12:15:42.590 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
+12:18:06.779 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 

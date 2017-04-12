@@ -145,13 +145,7 @@
 #define XPAR_MY_PERIPHERAL_0_HIGHADDR 0x7DE0FFFF
 
 
-/******************************************************************/
-
-/* Definitions for driver VGA_PERIPH_MEM */
-#define XPAR_VGA_PERIPH_MEM_NUM_INSTANCES 1
-
 /* Definitions for peripheral VGA_PERIPH_MEM_0 */
-#define XPAR_VGA_PERIPH_MEM_0_DEVICE_ID 0
 #define XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR 0xC0000000
 #define XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_HIGHADDR 0xC3FFFFFF
 

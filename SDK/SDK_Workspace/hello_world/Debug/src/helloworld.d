@@ -3,7 +3,8 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
  ../../hello_world_bsp/microblaze_0/include/xparameters.h \
  ../../hello_world_bsp/microblaze_0/include/xio.h \
  ../../hello_world_bsp/microblaze_0/include/xbasic_types.h \
- ../../hello_world_bsp/microblaze_0/include/vga_periph_mem.h \
+ ../src/vga_periph_mem.h \
+ ../../hello_world_bsp/microblaze_0/include/xbasic_types.h \
  ../../hello_world_bsp/microblaze_0/include/xstatus.h \
  ../../hello_world_bsp/microblaze_0/include/xil_io.h \
  ../../hello_world_bsp/microblaze_0/include/xil_types.h \
@@ -20,7 +21,9 @@ src/helloworld.d: ../src/helloworld.c ../src/platform.h \
 
 ../../hello_world_bsp/microblaze_0/include/xbasic_types.h:
 
-../../hello_world_bsp/microblaze_0/include/vga_periph_mem.h:
+../src/vga_periph_mem.h:
+
+../../hello_world_bsp/microblaze_0/include/xbasic_types.h:
 
 ../../hello_world_bsp/microblaze_0/include/xstatus.h:
 
