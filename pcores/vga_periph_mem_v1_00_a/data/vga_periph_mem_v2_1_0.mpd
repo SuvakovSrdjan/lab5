@@ -92,4 +92,6 @@ PORT red_o          = "", DIR = O, VEC = [7:0]
 PORT green_o        = "", DIR = O, VEC = [7:0]
 PORT blue_o         = "", DIR = O, VEC = [7:0]
 
+PORT o_system_start_irq = "", DIR = O, SIGIS = INTERRUPT, SENSITIVITY = EDGE_RISING
+
 END

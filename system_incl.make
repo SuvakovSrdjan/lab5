@@ -155,7 +155,8 @@ implementation/system_clock_generator_0_wrapper.ngc \
 implementation/system_axi4lite_0_wrapper.ngc \
 implementation/system_rs232_wrapper.ngc \
 implementation/system_my_peripheral_0_wrapper.ngc \
-implementation/system_vga_periph_mem_0_wrapper.ngc
+implementation/system_vga_periph_mem_0_wrapper.ngc \
+implementation/system_axi_intc_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

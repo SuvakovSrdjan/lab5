@@ -242,3 +242,7 @@
 12:15:29.485 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
 12:15:42.590 INFO  - FPGA configured successfully with bitstream "C:/materija/Ra174-2014/LPRS2/lab5/SDK/SDK_Workspace/basic_system_hw_platform/download.bit" 
 12:18:06.779 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:24:07.840 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:26:22.077 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:28:44.126 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+07:59:30.279 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 

@@ -102,6 +102,7 @@ BEGIN microblaze
  BUS_INTERFACE DLMB = microblaze_0_dlmb
  BUS_INTERFACE M_AXI_DP = axi4lite_0
  BUS_INTERFACE DEBUG = microblaze_0_debug
+ BUS_INTERFACE INTERRUPT = axi_intc_0_INTERRUPT
  PORT MB_RESET = proc_sys_reset_0_MB_Reset
  PORT CLK = clk_100_0000MHz
 END
@@ -169,8 +170,9 @@ END
 BEGIN vga_periph_mem
  PARAMETER INSTANCE = vga_periph_mem_0
  PARAMETER HW_VER = 1.00.a
- PARAMETER C_S_AXI_MEM0_BASEADDR = 0xC0000000
- PARAMETER C_S_AXI_MEM0_HIGHADDR = 0xC3FFFFFF
+ PARAMETER C_S_AXI_ID_WIDTH = 1
+ PARAMETER C_S_AXI_MEM0_BASEADDR = 0x78000000
+ PARAMETER C_S_AXI_MEM0_HIGHADDR = 0x7bffffff
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = clk_100_0000MHz
  PORT clk_i = vga_periph_0_clk_i
@@ -186,5 +188,17 @@ BEGIN vga_periph_mem
  PORT blue_o = vga_periph_0_blue_o
  PORT direct_mode_i = my_peripheral_0_DIP_Data[0]
  PORT display_mode_i = my_peripheral_0_DIP_Data[2:1]
+ PORT o_system_start_irq = vga_periph_mem_0_o_system_start_irq
+END
+
+BEGIN axi_intc
+ PARAMETER INSTANCE = axi_intc_0
+ PARAMETER HW_VER = 1.04.a
+ PARAMETER C_BASEADDR = 0x41200000
+ PARAMETER C_HIGHADDR = 0x4120ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ BUS_INTERFACE INTERRUPT = axi_intc_0_INTERRUPT
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT Intr = vga_periph_mem_0_o_system_start_irq
 END
 

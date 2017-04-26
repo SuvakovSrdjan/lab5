@@ -66,8 +66,14 @@ int main()
     clear_text_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     clear_graphics_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
     //draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
-    //set_cursor(350);
-    //print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, string_s, strlen(string_s)-1);
+    set_cursor(350);
+    /*for(i = 0; i < 640; i++) {
+           		print_string(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + i, string_s, strlen(string_s)-1);
+
+       			if(i == 639) {
+       				i = 0;
+       			}}
+*/
     //set_cursor(550);
     //print_char(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR, c);
     //clear_text_screen(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR);
@@ -75,14 +81,14 @@ int main()
 
     for(i = 0; i < 640; i++) {
         	if(direction == 0) {
-    			draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR + i);
+    			draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR -320 + i);
 
     			if(i == 639) {
     				direction = 1;
     				i = 0;
     			}
         	}else{
-        		draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR +640 - i);
+        		draw_square(XPAR_VGA_PERIPH_MEM_0_S_AXI_MEM0_BASEADDR - 320 +640 - i);
 
         		if(640 -i == 1) {
         		    				direction = 0;
