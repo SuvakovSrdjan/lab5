@@ -321,9 +321,47 @@ architecture IMP of user_logic is
   signal unit_sel            : std_logic_vector(1 downto 0);
   signal unit_addr           : std_logic_vector(GRAPH_MEM_ADDR_WIDTH-1 downto 0);--15+6+1
   signal reg_we              : std_logic;
+  
+  signal timer_count : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
+  signal timer_count_tc : std_logic;
+  signal timer_count_en : std_logic;
 
 begin
   --USER logic implementation added here
+  --timer counter
+ process (Bus2IP_Clk, Bus2IP_Resetn)begin
+	if Bus2IP_Resetn = '0' then
+		timer_count <= (others => '0');
+	elsif rising_edge(Bus2IP_Clk) then 
+		if (timer_count_en = '1') then
+			if (timer_count_tc = '1')  then
+				timer_count <= (others => '0');
+			else
+				timer_count <= timer_count + 1;
+			end if;                 
+		end if;                 
+	end if;                 
+ end process;       
+ 
+ timer_count_en <= slv_reg1(1);  
+ timer_count_tc <= '1' when (timer_count >= (slv_reg0 -1))
+			else '0';
+	process( Bus2IP_Clk ) is begin
+		if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
+			if Bus2IP_Resetn = '0' then
+				my_timer_irq <= '0';
+			else
+				my_timer_irq <= timer_count_tc;
+			end if;
+		end if;
+	end process;
+  
+  
+  
+  
+  
+  
+  
   unit_sel  <= Bus2IP_Addr(25 downto 24);
   unit_addr <= Bus2IP_Addr(GRAPH_MEM_ADDR_WIDTH+2-1 downto 2);
 
