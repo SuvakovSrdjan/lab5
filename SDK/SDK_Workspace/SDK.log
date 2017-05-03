@@ -246,3 +246,17 @@
 12:26:22.077 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 12:28:44.126 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
 07:59:30.279 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+12:10:46.643 INFO  - Processing command line option -hwspec C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+12:10:48.577 INFO  - The hardware specification for project 'basic_system_hw_platform' is different from C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml. 
+12:10:48.749 INFO  - Copied contents of C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.xml into \basic_system_hw_platform\system.xml. 
+12:10:48.764 INFO  - Copied contents of C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system.bit into \basic_system_hw_platform\system.bit. 
+12:10:48.764 INFO  - Copied contents of C:\materija\Ra174-2014\LPRS2\lab5\SDK\SDK_Export\hw\system_bd.bmm into \basic_system_hw_platform\system_bd.bmm. 
+12:10:49.076 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+12:10:50.605 INFO  - Restoring local repository preferences: 
+		 D:\work\lprs2\2013_2014\Resene_vezbe\lab56\basic_system 
+12:10:51.214 INFO  - Updating MSS for Board Support Package Project: hello_world_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: axi_intc_0, driver: intc_v2_06_a.
+ 
+12:10:52.555 INFO  - Updating hardware inferred compiler options for hello_world. 
+12:10:52.586 INFO  - Clearing existing target manager status. 

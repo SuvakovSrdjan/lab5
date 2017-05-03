@@ -63,7 +63,8 @@ entity vga_top is
     sync_o              : out std_logic;
     red_o               : out std_logic_vector(7 downto 0); 
     green_o             : out std_logic_vector(7 downto 0); 
-    blue_o              : out std_logic_vector(7 downto 0)
+    blue_o              : out std_logic_vector(7 downto 0);
+	 o_system_start_irq : out std_logic
   );
 end vga_top;
 
@@ -100,7 +101,8 @@ architecture rtl of vga_top is
     blank_o             : out std_logic;
     vga_pix_clk_o       : out std_logic;
     vga_rst_n_o         : out std_logic;
-    sync_o              : out std_logic
+    sync_o              : out std_logic;
+	 o_system_start_irq : out std_logic
   );
   end component vga;
 
@@ -217,7 +219,8 @@ begin
     blank_o             => blank_o,
     vga_pix_clk_o       => pix_clk_s,
     vga_rst_n_o         => vga_rst_n_s,
-    sync_o              => sync_o
+    sync_o              => sync_o,
+	 o_system_start_irq =>  o_system_start_irq 
   );
   dir_pixel_column_o <= pixel_column_s;
   dir_pixel_row_o <= pixel_row_s;

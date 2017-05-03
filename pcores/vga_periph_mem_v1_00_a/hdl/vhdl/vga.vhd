@@ -45,7 +45,8 @@ entity vga is
     blank_o             : out std_logic;
     vga_pix_clk_o       : out std_logic;
     vga_rst_n_o         : out std_logic;
-    sync_o              : out std_logic
+    sync_o              : out std_logic;
+	 o_system_start_irq : out std_logic
   );
 end vga;
 
@@ -80,7 +81,8 @@ architecture rtl of vga is
     psave_o             : out std_logic;
     blank_o             : out std_logic;
     pix_clk_o           : out std_logic;
-    sync_o              : out std_logic
+    sync_o              : out std_logic;
+	 o_system_start_irq : out std_logic
   );
   end component vga_sync;
   
@@ -192,7 +194,8 @@ begin
     psave_o            => psave_o,
     blank_o            => blank_o,
     pix_clk_o          => vga_pix_clk_o,
-    sync_o             => sync_o
+    sync_o             => sync_o,
+	 o_system_start_irq =>  o_system_start_irq
   );
 
   -- u zavisnosti od prametra resolution_type se vrsi instanciranje komponenti (DCM)

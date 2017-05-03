@@ -44,7 +44,8 @@ entity vga_sync is
     psave_o             : out std_logic;
     blank_o             : out std_logic;
     pix_clk_o           : out std_logic;
-    sync_o              : out std_logic
+    sync_o              : out std_logic;
+	 o_system_start_irq : out std_logic
   );
   end vga_sync;
 

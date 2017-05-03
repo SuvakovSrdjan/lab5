@@ -426,3 +426,9 @@ ELF file	: hello_world.elf
 elfcheck passed.
 'Finished building: hello_world.elf.elfcheck'
 ' '
+12:10:49 **** Build of project hello_world_bsp ****
+make -k all 
+'Finished building libraries'
+12:10:51 **** Build of configuration Debug for project hello_world ****
+make all 
+make: Ništa za napraviti za `all'.
